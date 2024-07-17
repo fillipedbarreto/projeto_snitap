@@ -115,3 +115,22 @@
         transform: translateY(100%);
     }
 }
+
+@media (width < 80rem) {
+    .gallery {
+        & .content {
+            margin-top: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        & figure {
+            margin-top: 1.5rem;
+            
+            & > img {
+                height: 19.5rem;
+            }
+        }
+    }
+}
